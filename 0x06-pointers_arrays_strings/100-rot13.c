@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
-  * rot13 - ...
-  * @s: ...
-  *
-  * Return: ...
-  */
+ * rot13 - ...
+ * @s: ...
+ *
+ * Return: ...
+ */
 char *rot13(char *s)
 {
 	int a = 0;
@@ -20,7 +20,12 @@ char *rot13(char *s)
 				s[a] -= 13;
 				break;
 			}
-a++;
+
+			s[a] += 13;
+			break;
+		}
+
+		a++;
 	}
 
 	return (s);
