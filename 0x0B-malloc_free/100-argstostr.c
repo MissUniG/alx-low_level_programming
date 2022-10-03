@@ -52,7 +52,8 @@ char *argstostr(int ac, char **av)
 		tl += l + 1;
 	}
 
-s[tl] = '\0';
+	s[tl] = '\0';
 
 	return (s);
 }
+
